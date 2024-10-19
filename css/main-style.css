@@ -1,0 +1,504 @@
+@charset "utf-8";
+/* CSS Document */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+.btn-primary{ transition: all 2s}
+.card{
+	position: relative;
+	overflow: hidden
+}
+.card-body {
+	position: absolute;
+	background: rgba(0,0,0,0.25);
+	color: #fff;
+	width: 80%;
+	left: 10%;
+	bottom: -50%;
+	transition: all 1s;
+	/*transform: scaleX(0);
+	transform-origin: left center;
+	opacity: 0*/
+}
+.card img{	transition: all 1s} 
+
+.card:hover >img
+{
+	transform: scale(1.6) rotate(-15deg) 
+}
+.card:hover >.card-body
+{
+	bottom:10%;
+	/*transform: scaleX(1);
+	opacity: 1
+	*/
+	
+}
+.index.html 
+img {
+    width: 50%; /* Giảm kích thước ảnh xuống 50% so với kích thước gốc */
+    height: auto; /* Giữ tỷ lệ ảnh */
+}
+#carouselExampleIndicators1 .carousel-caption
+{
+	width: 30%;
+	top: 20%;	
+	left: 55%;
+	text-align: left
+	}
+#carouselExampleIndicators1 .carousel-caption-center
+{
+	width: 50%;
+	top: 20%;	
+	left: 25%;
+	text-align: center
+	}
+
+/*responsive text trong carousel*/
+@media (max-width:960px){
+#carouselExampleIndicators1 .img-fluid
+{
+	height: 50vh
+}
+	#carouselExampleIndicators1 .carousel-caption
+{
+	width: 70%;
+	top: 10%;	
+	left: 15%;
+	text-align: center
+	}
+	#carouselExampleIndicators1 .carousel-caption .display-3{
+		font-size: 2rem;
+		font-weight: 600
+	}
+	.carousel-indicators li { 
+  	width: 12px;
+  	height: 12px;
+	}
+}
+
+#danhmuc .btn{
+	position: absolute;
+	width: 90%;
+	text-align: center;
+	bottom: -30px; left: 5%;
+	font-weight: bold;
+	font-size: 1rem;
+	padding: 15px;
+	border-radius:15px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+	border: 1px solid rgba(255,255,255,0.5)
+}
+
+#loi-ich img{
+    width: 40px; /* Điều chỉnh kích thước nhỏ xuống */
+    height: auto; /* Giữ tỷ lệ hình ảnh */
+	height: 40px
+}
+/*------------------- style cho vung san pham---------------*/
+.icon-sp
+{
+	position: absolute;
+	width:80%; height: 70%;
+	background: rgba(225,225,225,0.48);
+	top: 7%; left: 10%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.5s;
+	transform: scale(0);
+	opacity: 0
+}
+.icon-sp a{ margin: 15px; color: #fff; }
+#san-pham img{
+    max-width: 80%; /* Điều chỉnh kích thước nhỏ xuống */
+    height: auto; /* Giữ tỷ lệ hình ảnh */
+	
+}
+
+.sanpham:hover >.icon-sp
+{
+	transform: scale(0.8);
+	opacity: 1	
+}
+
+.rounded-15{
+	border-radius: 15px
+}
+
+
+footer
+{
+	background: #F3D0D7;
+	background-size: cover
+}
+.page-tilte
+{   background: #F3D0D7;
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: cover
+}
+ 
+
+
+.preview {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  @media screen and (max-width: 996px) {
+    .preview {
+      margin-bottom: 20px; } }
+
+.preview-pic {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+
+.preview-thumbnail.nav-tabs {
+  border: none;
+  margin-top: 15px; }
+  .preview-thumbnail.nav-tabs li {
+    width: 18%;
+    margin-right: 2.5%; }
+    .preview-thumbnail.nav-tabs li img {
+      max-width: 100%;
+      display: block; }
+    .preview-thumbnail.nav-tabs li a {
+      padding: 0;
+      margin: 0; }
+    .preview-thumbnail.nav-tabs li:last-of-type {
+      margin-right: 0; }
+
+.tab-content {
+  overflow: hidden; }
+  .tab-content img {
+    width: 100%;
+    -webkit-animation-name: opacity;
+            animation-name: opacity;
+    -webkit-animation-duration: .3s;
+            animation-duration: .3s; }
+
+.card {
+  margin-top: 50px;
+  background: #eee;
+  padding: 3em;
+  line-height: 1.5em; }
+
+@media screen and (min-width: 997px) {
+  .wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; } }
+
+.details {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.colors {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+
+.product-title, .price, .sizes, .colors {
+  text-transform: UPPERCASE;
+  font-weight: bold; }
+
+.checked, .price span {
+  color: #D38182; }
+
+.product-title, .rating, .product-description, .price, .vote, .sizes {
+  margin-bottom: 15px; }
+
+.product-title {
+  margin-top: 0; }
+
+.size {
+  margin-right: 10px; }
+  .size:first-of-type {
+    margin-left: 40px; }
+
+.color {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  height: 2em;
+  width: 2em;
+  border-radius: 2px; }
+  .color:first-of-type {
+    margin-left: 20px; }
+
+.add-to-cart, .like {
+  background: #D38182 ;
+  padding: 1.2em 1.5em;
+  border: none;
+  text-transform: UPPERCASE;
+  font-weight: bold;
+  color: #fff;
+  -webkit-transition: background .3s ease;
+          transition: background .3s ease; }
+  .add-to-cart:hover, .like:hover {
+    background: #b36800;
+    color: #fff; }
+
+.not-available {
+  text-align: center;
+  line-height: 2em; }
+  .not-available:before {
+    font-family:"Old Standard TT",serif;
+    content: "\f00d";
+    color: #fff; }
+
+.orange {
+  background: #ff9f1a; }
+
+.green {
+  background: #85ad00; }
+
+.blue {
+  background: #262173; }
+
+.tooltip-inner {
+  padding: 1.3em; }
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(3);
+            transform: scale(3); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(3);
+            transform: scale(3); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+/*# sourceMappingURL=style.css.map */
+/*scroll*/
+.scroll {
+     display: flex;
+     position: relative;
+     width: 100%;
+     height: 10%;
+     min-height: 100px;
+     margin: auto;
+     background-color: #fff;
+     overflow: hidden;
+     z-index: 1;
+}
+.m-scroll {
+     display: flex;
+     position: absolute;
+     top: 0;
+     left: 0;
+     align-items: center;
+     justify-content: flex-start;
+     width: 100%;
+     height: 100%;
+     white-space: nowrap;
+     transform: scale(2);
+     transition: all 1s ease;
+}
+ .m-scroll > div {
+     display: flex;
+     animation: scrollText 20s infinite linear;
+}
+
+.m-scroll h6 {
+     margin: 0;
+   margin-right: 150px;
+     font-size: 10px;
+     color: #0C0000 ;
+     transition: all 2s ease;
+}
+
+@keyframes scrollText {
+     from {
+         transform: translateX(0%);
+    }
+     to {
+         transform: translateX(-50%);
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Old Standard TT", serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.content-second-header p{
+  text-align: center;
+   font-size: 35px;
+ }
+.contact-form {
+    background-color: #F3D0D7;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group { 
+	
+    margin-bottom: 20px;
+}
+#lienhe 
+.container form h1 {
+    color: #fff;
+	font-weight: 500;
+	margin-top: 20px;
+	width: 500px;
+	textext-align: center;
+	
+}
+.container form input{
+	width: 290px;
+	height: 40px;
+	papadding-left: 10px;
+	outline : none;
+	border: none;
+	font-size: 15px;
+	marmargin-bottom: 10px;
+	background: none;
+	border-bottom: 2px ssolid #fff;	
+}
+
+p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+label {
+    font-size: 1em;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+input:focus, textarea:focus {
+    border-color: #672324;
+    outline: none;
+}
+
+button {
+    display: inline-block;
+    background-color: #672324;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+.form-group-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+    background-color: #A86D79;
+	
+}
+
+
+.dropdown-menu {
+    background-color: #F3D0D7; /* Màu nền tổng thể của dropdown */
+}
+.dropdown-menu a {
+    font-family: "Old Standard TT", serif; /* Đổi font chữ */
+    font-size: 16px; /* Kích thước chữ */
+    color: #B73E40;
+    padding: 10px 15px; /* Tạo khoảng cách bên trong */
+    display: block; /* Giữ các mục thành block */
+    text-decoration: none; /* Loại bỏ gạch chân */
+}
+.dropdown-menu a:hover {
+    background-color: #5B0001; /* Màu nền khi hover */
+    color: #FE8C8E; /* Màu chữ khi hover */
+    font-weight: bold; /* In đậm chữ khi hover */
+}
+.navbar  navbar-dark bg-pink {
+    background-color: #F3D0D7; /* Màu nền cho thanh menu */
+    padding: 10px 20px;
+}
+.contact-form { 
+    display: flex; /* Sử dụng Flexbox để căn giữa */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    background-color: #F3D0D7; /* Màu nền tùy chọn */
+}
+
+/* Định dạng cho form */
+.contact-form form {
+    background-color:rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+    width: 100%;
+    max-width: 600px; /* Giới hạn chiều rộng form */
+}
+
+/* Định dạng cho các trường input và textarea */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box; /* Đảm bảo padding không làm thay đổi kích thước */
+}
